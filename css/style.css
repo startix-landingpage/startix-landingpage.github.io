@@ -476,3 +476,12 @@ section[id]{scroll-margin-top:88px}
 .ico-warn{color:#D97706 !important}
 .ico-danger{color:#DC2626 !important}
 .ico-gold{color:#F59E0B !important}
+
+/* Forzar la visibilidad de los elementos en dispositivos móviles */
+@media (max-width: 980px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+}
