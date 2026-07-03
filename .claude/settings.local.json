@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.startix.click)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(touch .nojekyll)",
+      "Bash(printf '%s\\\\n' 'Thumbs.db' '.DS_Store')",
+      "Bash(git add *)",
+      "PowerShell(git *)"
+    ]
+  }
+}

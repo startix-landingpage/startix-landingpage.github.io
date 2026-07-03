@@ -578,5 +578,15 @@
 <button class="back-to-top" id="backToTop" aria-label="Volver arriba"><span class="msym" aria-hidden="true">arrow_upward</span></button>
 
 <script src="js/main.js"></script>
+
+<script>
+window.addEventListener('load', () => {
+  const div = document.createElement('div');
+  div.style.cssText='position:fixed;top:0;left:0;background:red;color:#fff;font-size:11px;z-index:99999;padding:8px;white-space:pre;';
+  div.textContent = `innerWidth=${window.innerWidth} outerWidth=${window.outerWidth} clientWidth=${document.documentElement.clientWidth} DPR=${window.devicePixelRatio} mq980=${window.matchMedia('(max-width:980px)').matches} mq760=${window.matchMedia('(max-width:760px)').matches} screenW=${screen.width}`;
+  document.body.prepend(div);
+});
+</script>
 </body>
+
 </html>
