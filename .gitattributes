@@ -1,0 +1,14 @@
+# Normalizar todos los archivos de texto a LF en el repo (evita diffs gigantes por CRLF)
+* text=auto eol=lf
+
+# Binarios: git no debe tocar sus saltos de línea
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
